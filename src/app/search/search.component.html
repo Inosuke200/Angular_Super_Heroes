@@ -1,0 +1,16 @@
+<div class="row">
+        <form class="col s12" (submit)="formSubmit()">
+          <div class="row">
+            <div class="input-field  col s10 offset-s1">
+              <input [(ngModel)]= "mot" id="email" type="text" class="validate" name="mot">
+              <label for="email">Rechercher</label>
+              <span class="helper-text" >{{errorText}} {{mot}}</span>
+            </div>
+          </div>
+        </form>
+</div>
+
+      <app-hero-list></app-hero-list>
+      <app-hero-list></app-hero-list>
+
+      
